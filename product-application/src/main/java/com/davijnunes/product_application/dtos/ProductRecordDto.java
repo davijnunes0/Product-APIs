@@ -1,7 +1,6 @@
 package com.davijnunes.product_application.dtos;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 
@@ -14,7 +13,6 @@ public record ProductRecordDto(
     @NotBlank(message = "Descrição não pode estar em branco")
     String productDescription,
     
-    @NotNull
     @Positive(message = "Preço deve ser positivo")
     Double productPrice
     
