@@ -46,16 +46,16 @@ public class Product {
 
     public String getProductDescription() {return this.productDescription;}
 
-    public void setPrice(Double productPrice){
+    public void setProductPrice(Double productPrice){
         this.productPrice = productPrice;
     }
 
-    public Double getPrice() {return this.productPrice;}
+    public Double getProductPrice() {return this.productPrice;}
 
     @Override
     public String toString() {
         return "Product [getProductId()=" + getProductId() + ", getProductName()=" + getProductName()
-                + ", getProductDescription()=" + getProductDescription() + ", getPrice()=" + getPrice() + "]";
+                + ", getProductDescription()=" + getProductDescription() + ", getPrice()=" + getProductPrice() + "]";
     }
 
     @Override
